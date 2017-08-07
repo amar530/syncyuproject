@@ -1,0 +1,26 @@
+body{
+	background: #cccccc;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    max-width: 100%;
+    text-align: center;
+}
+tr td:nth-child(1)
+{
+	background-color: #dddddd;
+}
+
+td{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+.container{
+	background: #ffffff;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding: 20px;
+}

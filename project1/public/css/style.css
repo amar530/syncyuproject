@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+	width: 90%;
+	margin: 30px auto;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+    float: left;
+    margin-top: -4px;
+    width: 100%;
+}
+@media only screen and (max-width: 768px) {
+    .col-m-12 
+    {
+    	width: 100%;
+    }
+    .container
+    {
+	width: 100%;
+	margin:auto;
+	border: 1px solid black;
+	}
+}
+/*for ipad*/
+/*have to show 2 images per row*/
+@media(min-width: 768px) and (max-width: 1024px)
+{
+    .col-ipad-6 
+    {
+    	width: 50%;
+    }
+    .container
+	{
+	width: 100%;
+	margin:auto;
+	border: 1px solid black;
+	}	
+}
+
+/*for ipadro, laptop and desktop*/
+/*have to show 3image per row*/
+@media only screen and (min-width: 1024px)
+{
+    .col-4 {width: 33.33%;}
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+<div class="container" ng-controller="controller">
+<h2>The Home place is {{startingPoint}}</h2>
+<h3>The Route Across the country are</h3>
+<div class="route">
+	<table>
+  <tr>
+    <td>City Name :</td>
+    <td ng-repeat="data in datas">{{data.cityname}}</td>
+  </tr>
+  <tr >
+    <td>Distance :</td>
+    <td ng-repeat="data in datas">{{data.distance}}</td>
+  </tr>
+</table>
+</div>
+<h3>The distance between starting point to nearest city is <strong>{{minDistance}}km</strong></h3>
+<h3>And The Name of the Nearest City to the home is <strong>{{nearByCity}}</strong></h3>
+<h1>The Distance Between Two nearest city is <strong>{{nearestDistace}}km</strong></h1>
+
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+
+</body>
+</html>

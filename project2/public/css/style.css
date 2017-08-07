@@ -1,0 +1,87 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#6e6e6e;
+}
+#mainContainer{
+	background: #ffffff;
+	border:1px solid #c8c8c8;
+	padding: 20px 40px;
+}
+.header img{
+	width: 40px;
+	height: 40px;
+}
+.image img{
+	width: 100%;
+	height: auto;
+}
+h4{font-size: 20px;
+	font-weight: bold;
+}
+h5{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#controle{
+	background: #f7f2f7;
+	padding-bottom: 8px;
+}
+#views{
+	width: 100%;
+	margin: auto;
+	padding-top: 5px;
+	border-top: 1px solid #e6e6e6;
+}
+#views [class*="col-"] {
+    line-height: 40px;
+}
+#views sup{
+	color: red;
+}
+#views i{
+	font-weight: bold; 
+	font-size: 18px;
+}
+#views p{
+	font-size: 18px;
+	color: #cccccc;
+	text-align: right;
+}
+#input{
+	    margin-right: -14px;
+    margin-left: 1px;
+}
+}
+
+.input-group-addon {
+    padding: 0px 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+@media(max-width: 750px)
+{
+#views [class*="col-"] {
+    line-height: 20px;
+    font-size: 12px;
+}
+#views i{
+	font-size: 10px;
+}
+#views p{
+	text-align: left;
+    font-size: 12px;
+
+}
+	
+}
